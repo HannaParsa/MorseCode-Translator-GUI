@@ -27,3 +27,9 @@ MORSE_CODE_DIC = { 'A':'.-', 'B':'-...',
                     '?':'..--..', '/':'-..-.', '-':'-....-',
                     '(':'-.--.', ')':'-.--.-'}
 
+#function that cleans both text and code areas from
+def clearAll():
+    language1_field.delete(1.0, END)
+    language2_field.delete(1.0, END)
+
+    
