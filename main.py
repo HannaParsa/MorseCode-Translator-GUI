@@ -32,4 +32,6 @@ def clearAll():
     language1_field.delete(1.0, END)
     language2_field.delete(1.0, END)
 
-    
+#converting language to another
+def convert():
+        
