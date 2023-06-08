@@ -5,5 +5,8 @@ from tkinter import messagebox
 root = TK()
 
 Variable1 = StringVar(root)
-variable2 = stringvar(root, 'variable1')
+variable2 = stringvar(root)
+
+Variable1.set("lang-code")
+Variable2.set("lang-code")
 
