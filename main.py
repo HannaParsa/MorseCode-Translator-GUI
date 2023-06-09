@@ -34,4 +34,5 @@ def clearAll():
 
 #converting language to another
 def convert():
-        
+
+if __name__ == "__main__":
