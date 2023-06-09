@@ -36,3 +36,9 @@ def clearAll():
 def convert():
 
 if __name__ == "__main__":
+     root.configure(background = 'light green') 
+     root.geometry("400x350") 
+     root.title("Translator")
+    # Create Welcome to Morse Code Translator label 
+     headlabel = Label(root, text = 'Welcome to Morse Code Translator', 
+                              fg = 'black', bg = "red") 
