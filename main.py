@@ -34,11 +34,36 @@ def clearAll():
 
 #converting language to another
 def convert():
+#todo:
 
 if __name__ == "__main__":
-     root.configure(background = 'light green') 
-     root.geometry("400x350") 
-     root.title("Translator")
-    # Create Welcome to Morse Code Translator label 
-     headlabel = Label(root, text = 'Welcome to Morse Code Translator', 
-                              fg = 'black', bg = "red") 
+    root.configure(background = 'light green') 
+    root.geometry("400x350") 
+    root.title("Translator")
+# Create Welcome to Morse Code Translator label 
+    headlabel = Label(root, text = 'Welcome to Morse Code Translator', 
+                            fg = 'black', bg = "red") 
+# Create a "One Language " label 
+    label1 = Label(root, text = "One Language ",
+                fg = 'black', bg = 'dark green')
+    
+# Create a "From Language " label 
+    label2 = Label(root, text = "From Language", 
+                fg = 'black', bg = 'dark green') 
+    
+# Create a "To Language " label 
+    label3 = Label(root, text = "To Language ", 
+                fg = 'black', bg = 'dark green')
+
+# Create a "Converted Language " label 
+    label4 = Label(root, text = "Converted Language ", 
+                fg = 'black', bg = 'dark green')
+
+# grid method is used for placing 
+# the widgets at respective positions 
+# in table like structure .  
+    headlabel.grid(row = 0, column = 1) 
+    label1.grid(row = 1, column = 0) 
+    label2.grid(row = 2, column = 0)
+    label3.grid(row = 3, column = 0)
+    label4.grid(row = 5, column = 0)
