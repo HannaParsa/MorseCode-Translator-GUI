@@ -50,6 +50,11 @@ def convert():
         # function call
         rslt = decrypt(message)
 
+    else : 
+        # show the error message
+        messagebox.showerror("please choose valid language code..")
+        return
+
 if __name__ == "__main__":
     root.configure(background = 'light green') 
     root.geometry("400x350") 
