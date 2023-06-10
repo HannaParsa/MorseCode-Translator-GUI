@@ -73,3 +73,9 @@ if __name__ == "__main__":
                                      font = "lucida 13")
     language2_field = Text(root, height = 5, width = 25,
                                      font = "lucida 13")
+# padx keyword argument used to set padding along x-axis . 
+    language1_field.grid(row = 1, column = 1, padx = 10) 
+    language2_field.grid(row = 5, column = 1, padx = 10)
+   
+# list of language codes
+    languageCode_list = ["Eng", "Morse"]
