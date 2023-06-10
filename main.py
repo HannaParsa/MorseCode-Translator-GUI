@@ -67,3 +67,9 @@ if __name__ == "__main__":
     label2.grid(row = 2, column = 0)
     label3.grid(row = 3, column = 0)
     label4.grid(row = 5, column = 0)
+# Create a text area box 
+# for filling or typing the information. 
+    language1_field = Text(root, height = 5, width = 25,
+                                     font = "lucida 13")
+    language2_field = Text(root, height = 5, width = 25,
+                                     font = "lucida 13")
