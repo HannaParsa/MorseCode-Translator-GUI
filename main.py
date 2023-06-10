@@ -42,8 +42,13 @@ def convert():
          # show the error message
         messagebox.showerror("Can't Be same Language")
         return
+
     if variable1.get() == "Eng" and variable2.get()=="Morse":
-        
+        rslt = encrypt(message)
+
+    if variable1.get() == "Morse" and variable2.get() == "Eng" :
+        # function call
+        rslt = decrypt(message)
 
 if __name__ == "__main__":
     root.configure(background = 'light green') 
