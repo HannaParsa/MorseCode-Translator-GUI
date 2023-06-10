@@ -42,7 +42,8 @@ def convert():
          # show the error message
         messagebox.showerror("Can't Be same Language")
         return
-    
+    if variable1.get() == "Eng" and variable2.get()=="Morse":
+        
 
 if __name__ == "__main__":
     root.configure(background = 'light green') 
