@@ -79,3 +79,20 @@ if __name__ == "__main__":
    
 # list of language codes
     languageCode_list = ["Eng", "Morse"]
+
+# create a drop down menu using OptionMenu function
+# which takes window name, variable and choices as
+# an argument. use * before the name of the list,
+# to unpack the values
+    FromLanguage_option = OptionMenu(root, variable1, *languageCode_list)
+    ToLanguage_option = OptionMenu(root, variable2, *languageCode_list)
+       
+    FromLanguage_option.grid(row = 2, column = 1, ipadx = 10)
+    ToLanguage_option.grid(row = 3, column = 1, ipadx = 10)
+       
+# Create a Convert Button and attached 
+# with convert function 
+    button1 = Button(root, text = "Convert", bg = "red", fg = "black",
+                                command = convert)
+       
+    button1.grid(row = 4, column = 1)
