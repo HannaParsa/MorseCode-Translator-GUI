@@ -54,6 +54,10 @@ def convert():
         # show the error message
         messagebox.showerror("please choose valid language code..")
         return
+        
+    # insert content into text area
+    # from rslt variable
+    language2_field.insert('end -1 chars', rslt)
 
 if __name__ == "__main__":
     root.configure(background = 'light green') 
