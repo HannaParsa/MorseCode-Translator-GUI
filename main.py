@@ -96,3 +96,13 @@ if __name__ == "__main__":
                                 command = convert)
        
     button1.grid(row = 4, column = 1)
+
+# Create a Clear Button and attached 
+# with clearAll function 
+    button2 = Button(root, text = "Clear", bg = "red", 
+                     fg = "black", command = clearAll)
+     
+    button2.grid(row = 6, column = 1)
+    
+# Start the GUI 
+    root.mainloop() 
