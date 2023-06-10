@@ -34,7 +34,7 @@ def clearAll():
 
 #converting language to another
 def convert():
-#todo:
+
 
 if __name__ == "__main__":
     root.configure(background = 'light green') 
