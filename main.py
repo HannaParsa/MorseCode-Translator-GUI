@@ -38,6 +38,12 @@ def convert():
     # ignoring \n from the text box content
     message = language1_field.get("1.0", "end")[:-1]
 
+    if variable1.get() == variable2.get():
+         # show the error message
+        messagebox.showerror("Can't Be same Language")
+        return
+    
+
 if __name__ == "__main__":
     root.configure(background = 'light green') 
     root.geometry("400x350") 
