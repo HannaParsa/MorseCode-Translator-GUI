@@ -34,7 +34,9 @@ def clearAll():
 
 #converting language to another
 def convert():
-
+    # get a whole input content from text box
+    # ignoring \n from the text box content
+    message = language1_field.get("1.0", "end")[:-1]
 
 if __name__ == "__main__":
     root.configure(background = 'light green') 
