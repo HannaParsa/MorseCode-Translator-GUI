@@ -60,7 +60,21 @@ def convert():
     language2_field.insert('end -1 chars', rslt)
 
 def encrypt(message):
-     cipher = ''
+    cipher = ''
+    for letter in message:
+      if letter != ' ':
+
+        # Looks up the dictionary and adds the
+        # corresponding morse code
+        # along with a space to separate
+        # morse codes for different characters
+        cipher += MORSE_CODE_DICT[letter] + ' '
+      else:
+        # 1 space indicates different characters
+        # and 2 indicates different words
+        cipher += ' '
+
+    return cipher
 if __name__ == "__main__":
     root.configure(background = 'light green') 
     root.geometry("400x350") 
