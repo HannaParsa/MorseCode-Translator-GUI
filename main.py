@@ -75,6 +75,14 @@ def encrypt(message):
         cipher += ' '
 
     return cipher
+
+def decrypt(message):
+    # extra space added at the end to access the
+    # last morse code
+    message += ' '
+   
+    decipher = ''
+    citext = ''    
 if __name__ == "__main__":
     root.configure(background = 'light green') 
     root.geometry("400x350") 
