@@ -93,7 +93,17 @@ def decrypt(message):
    
             # storing morse code of a single character
             citext += letter
-                
+          # in case of space
+        else:
+            # if i = 1 that indicates a new character
+            i += 1
+   
+            # if i = 2 that indicates a new word
+            if i == 2 :
+   
+                 # adding space to separate words
+                decipher += ' '
+                    
 if __name__ == "__main__":
     root.configure(background = 'light green') 
     root.geometry("400x350") 
