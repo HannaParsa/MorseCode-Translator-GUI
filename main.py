@@ -1,7 +1,7 @@
 
 from morse_converter_class import MorseCode
 from tkinter import *
-import pyperclip
+#import pyperclip
 #### ------------ Morse Converter ------------ ####
 morse_converter = MorseCode()
 def to_morse():
